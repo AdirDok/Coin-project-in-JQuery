@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+body{
+    width: 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.hade h1{
+    font-size:xx-large;
+    font-size:3em;
+}
+
+.hade{
+    z-index: 2;
+    background-image: url("stock.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 15%;
+    display: flex;  
+    flex-wrap:wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky ;
+    top:0px;
+    color: whitesmoke;
+}
+
+.main-hade{
+    width: 100%;
+    min-height: 50%;    
+    padding: 5px;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.allBtns{
+    width: 30%;
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;   
+}
+
+.inp{
+    height: 100%;
+    width: 60%;
+    border-radius: 10px;
+    font-size: large;
+    outline: none; 
+}
+
+.Mbtn{
+    min-width: 70px;
+    height: 35px;   
+    font-size: large;
+    color: whitesmoke;
+    background-color: rgb(54, 52, 52);
+    border-radius: 15px;
+    outline: none;
+}
+
+.main-screen{
+     min-height: 85%;
+     background-image: url(bitcoim.jpg);
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+
+
+.All-coins , .about{
+    color: white;
+    height: 100%;
+    background-color: black;
+
+}
+
+.All-coins{
+    opacity: 0.9;
+}
+
+.reports{
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.coin{
+    margin: 0 5px;
+    margin-bottom: 10px;
+    background-color: rgb(43, 51, 66);
+    min-height: 90px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px; 
+    border: 1px whitesmoke solid;
+    color:rgb(255, 255, 255);
+    border-radius: 10px;
+    
+}
+
+.infoBtn{
+    height: 50%;
+    font-size: 1em;
+}
+
+.C-img{
+    max-width: 20%;
+    min-height: 30%;
+    border-radius: 50%;
+    background-color: snow;
+}
+
+.names{
+    display: flex;
+    justify-content: space-around;
+    min-width: 20%;
+}
+
+.more-info{
+     min-width: 30%;
+     min-height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    border: 2px solid rgb(49, 35, 134);
+    background-color:rgb(93, 111, 211);
+
+}
+
+.prises{
+    text-align: center;
+    width: 60%;
+    font-size: x-large;
+}
+
+.about{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+.meme{
+    height: 50%;   
+}
+
+#not-found{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  margin: 0 5px;
+  margin-bottom: 10px;
+  background-color: rgb(43, 51, 66);
+  min-height: 90px;
+  border: 1px whitesmoke solid;
+  color:rgb(255, 255, 255);
+  border-radius: 10px;
+
+}
+
+.popup{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.575);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+
+}
+
+.smallpopup{
+    background-color: cornsilk;
+    opacity: 1;
+    min-width: 70%;
+    height: 50%;
+    position: relative;
+  
+}
+
+.popup-btns{
+    background-color: darkkhaki;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    top: 0px;
+    height: 10%;
+}
+
+.popup-coin{
+    background-color: azure;
+    height: 18%;
+     display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    border-bottom: 1px black solid;
+    padding: 10px;
+
+}
+
+
+
+/* ================================================swich ==================================================*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  /* =========================================== גיף טעינה ==================== */
+
+#loading{
+    position: fixed;
+    right:10px;
+}
+
+  .loader{
+    margin: 0 0 2em;
+    height: 100px;
+    width: 20%;
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto 1em;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+
+  svg path,
+  svg rect{
+    fill: #0011ff;
+  }
+
